@@ -1,0 +1,4 @@
+interface Product {
+	int getProductTime();
+}
+
