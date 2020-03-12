@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-03-11T02:42:13.923260Z</date>
+  <millis>1583894533923</millis>
+  <nanos>260000</nanos>
+  <sequence>0</sequence>
+  <logger>fkjava</logger>
+  <level>FINE</level>
+  <class>LoggerI18N</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>debug信息</message>
+</record>
+<record>
+  <date>2020-03-11T02:42:13.951401Z</date>
+  <millis>1583894533951</millis>
+  <nanos>401000</nanos>
+  <sequence>1</sequence>
+  <logger>fkjava</logger>
+  <level>INFO</level>
+  <class>LoggerI18N</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>info信息</message>
+</record>
+<record>
+  <date>2020-03-11T02:42:14.120367Z</date>
+  <millis>1583894534120</millis>
+  <nanos>367000</nanos>
+  <sequence>2</sequence>
+  <logger>fkjava</logger>
+  <level>SEVERE</level>
+  <class>LoggerI18N</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>error信息</message>
+</record>
+</log>
