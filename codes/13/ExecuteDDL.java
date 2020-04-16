@@ -40,8 +40,8 @@ public class ExecuteDDL
 		System.out.println("jdbc的Driver:"+ed.driver);
 
 		ed.createTable("create table jdbc_test "
-				+ "( jdbc_id int auto_increment primaty key, "
+				+ "( jdbc_id int auto_increment primary key, "
 				+ "jdbc_name varchar(255), "
-				+ "jdbc_desc text);");
+				+ "jdbc_desc int);");
 	}
 }
