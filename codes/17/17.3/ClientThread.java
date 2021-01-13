@@ -17,7 +17,8 @@ public class ClientThread implements Runnable
 		try
 		{
 			String content = null;
-			while ((content = br.readLine()) != null)
+			content = br.readLine();
+			while (content != null)
 			{
 				System.out.println(content);
 			}

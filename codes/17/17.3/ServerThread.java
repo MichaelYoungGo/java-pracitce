@@ -13,10 +13,15 @@ public class ServerThread implements Runnable {
 	}
 	public void run(){
 		try{
+			System.out.println("开启接收服务的线程！");
 			String content = null;
-			while((content = readFromClient()) != null){
+			//System.out.println(readFromClient());
+			content = readFromClient();
+			System.out.println(content);
+			while(content != null){
 				for (var s: MyServer.socketList){
 					var ps = new PrintStream(s.getOutputStream());
+					ps.println(content);
 				}
 			}
 		}catch(IOException e){
@@ -26,10 +31,12 @@ public class ServerThread implements Runnable {
 	private String readFromClient(){
 		try
 		{
+			System.out.println("打印client输入的数据");
 			return br.readLine();
 		}
 		catch (IOException e)
 		{
+			System.out.println(e);
 			MyServer.socketList.remove(s);
 		}
 		return null;

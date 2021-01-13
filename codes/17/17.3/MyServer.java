@@ -13,6 +13,7 @@ public class MyServer
 		var ss = new ServerSocket(30000);
 		while (true)
 		{
+			System.out.println("启动聊天室服务器");
 			Socket s = ss.accept();
 			socketList.add(s);
 			new Thread(new ServerThread(s)).start();
