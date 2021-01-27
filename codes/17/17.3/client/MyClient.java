@@ -12,8 +12,7 @@ public class MyClient
 		var ps = new PrintStream(s.getOutputStream());
 		String line = null;
 		var br = new BufferedReader(new InputStreamReader(System.in));
-	 	line = br.readLine();
-		while (line != null)
+		while ((line=br.readLine())!= null)
 		{
 			ps.println(line);
 		}
