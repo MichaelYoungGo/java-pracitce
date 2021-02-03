@@ -1,7 +1,13 @@
+import java.util.Map;
+import java.util.Set;
+import java.util.HashMap;
+import java.util.Collections;
+import java.util.HashSet;
+
 public class CrazyitMap<K,V>
 {
 	//创建一个线程安全的HashMap
-	public Map<K,V> map = Collections.syschronizedMap(new HashMap<K,V>());
+	public Map<K,V> map = Collections.synchronizedMap(new HashMap<K,V>());
 	//根据value来删除指定项
 	public synchronized void removeByValue(Object value)
 	{
